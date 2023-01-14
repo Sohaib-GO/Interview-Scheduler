@@ -19,5 +19,19 @@ const getInterview = (state, interview) => {
   return { ...interview, interviewer };
 };
 
+const getInterviewersForDay = (state, day) => {
+  const filteredDays = state.days.filter((stateDay) => stateDay.name === day);
 
-module.exports = { getAppointmentsForDay, getInterview };
+  if (filteredDays.length === 0) return [];
+
+  const interviewersArr = filteredDays[0].interviewers.map((id) => {
+    return state.interviewers[id];
+  });
+  return interviewersArr;
+};
+
+
+
+
+module.exports = { getAppointmentsForDay, getInterview, getInterviewersForDay };
+
