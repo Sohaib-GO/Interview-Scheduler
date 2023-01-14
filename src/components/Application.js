@@ -12,6 +12,7 @@ export default function Application(props) {
     // you may put the line below, but will have to remove/comment hardcoded appointments variable
     appointments: {},
     interviewers: {}
+
   });
   const setDay = day => setState({ ...state, day });
 
@@ -27,21 +28,25 @@ export default function Application(props) {
   }, []);
 
 
-  const dailyAppointments = getAppointmentsForDay(state, state.day).map(appointment => {
+  const appointments = getAppointmentsForDay(state, state.day);
+  const schedule = appointments.map((appointment) => {
     const interview = getInterview(state, appointment.interview);
-    return (
+    console.log(appointment.interview);
 
+    return (
       <Appointment
         key={appointment.id}
         id={appointment.id}
         time={appointment.time}
-        interview={interview}
+        interview= {interview}
+        
       />
     );
   });
+  
 
   
-console.log(state.interviewers);
+
 
   return (
     <main className="layout">
@@ -62,7 +67,7 @@ console.log(state.interviewers);
         />
       </section>
       <section className="schedule">
-        {dailyAppointments}
+        {schedule}
         <Appointment key="last" time="5pm" />
       </section>
     </main>
