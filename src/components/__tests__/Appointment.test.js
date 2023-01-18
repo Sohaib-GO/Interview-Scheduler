@@ -4,7 +4,7 @@ import Appointment from "components/Appointment";
 
 
 describe("Appointment", () => {
-  it("renders without crashing", () => {
+  it("", () => {
     render(<Appointment />);
   });
 } );
