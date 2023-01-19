@@ -2,7 +2,7 @@
 
 Scheduler is a SPA ( single-page-application) project, where students can create, edit, and delete interview appointments in real time.
 
-> **_React Library_** is used to build the front end, **_axios_** is used to fetch external **_API_**, **_StoryBook_** is used to design components in isolation, **_Jet Test Framework_** is used for unit and integration testing, and **_Cypress_** is used for end-to-end testing.
+> **_React JS_** is used to build the front end, **_axios_** is used to fetch external **_API_**, **_StoryBook_** is used to design components in isolation, **_Jet Test Framework_** is used for unit and integration testing, and **_Cypress_** is used for end-to-end testing.
 
 This is my fifth project at LHL after [Lotide](https://github.com/sohaib-go/lotide), [TinyApp](https://github.com/sohaib-go/tinyApp), [Tweeter](https://github.com/sohaib-go/tweeter), and midterm project [Food Ordering Pick up app](https://github.com/Sohaib-GO/Food-Ordering-Pick-Up-App)
 
