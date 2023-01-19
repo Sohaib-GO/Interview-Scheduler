@@ -8,6 +8,8 @@ import useVisualMode from "hooks/useVisualMode";
 import Status from "components/Appointment/Status";
 import Confirm from "components/Appointment/Confirm";
 import Error from "components/Appointment/Error";
+
+// Constants for different visual modes of the component
 const EMPTY = "EMPTY";
 const SHOW = "SHOW";
 const SAVING = "SAVING";
@@ -91,7 +93,7 @@ export default function Appointment(props) {
           interviewer={props.interview.interviewer.id}
           interviewers={props.interviewers}
           onCancel={back}
-          onSave={save}
+          onSave={Save}
         />
       )}
       {/* Render the error message */}
