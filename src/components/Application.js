@@ -13,9 +13,11 @@ export default function Application(props) {
   const { state, setDay, bookInterview, cancelInterview } =
     useApplicationData();
 
-  // get interviewers for the day
+  // Get Interviewers for the current day
   const interviewers = getInterviewersForDay(state, state.day);
+  // Get Appointments for the current day
   const DailyAppointments = getAppointmentsForDay(state, state.day);
+  // Map the appointments of the current day to Appointment components
   const schedule = DailyAppointments.map((appointment) => {
     const interview = getInterview(state, appointment.interview);
 
