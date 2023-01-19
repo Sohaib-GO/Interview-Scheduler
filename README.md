@@ -11,7 +11,7 @@ This is my fifth project at LHL after [Lotide](https://github.com/sohaib-go/loti
 
 #### _Create a New Interview_
 
-!["Create a New Interview"]()
+!["Create a New Interview"](https://github.com/Sohaib-GO/Interview-Scheduler/blob/master/public/README-IMGS/Create.gif))
 
 ## Dependencies
 
