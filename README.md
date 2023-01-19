@@ -9,9 +9,18 @@ This is my fifth project at LHL after [Lotide](https://github.com/sohaib-go/loti
 ## Final Product
 
 
+### Desktop View
+
+!["Desktop View"](https://github.com/Sohaib-GO/Interview-Scheduler/blob/master/public/README-IMGS/Desktop.png)
+
+### Mobile View
+
+!["Mobile View"](https://github.com/Sohaib-GO/Interview-Scheduler/blob/master/public/README-IMGS/Mobile.png)
+
+
 #### _Create a New Interview_
 
-!["Create a New Interview"](https://github.com/Sohaib-GO/Interview-Scheduler/blob/master/public/README-IMGS/Create.gif))
+!["Create a New Interview"](https://github.com/Sohaib-GO/Interview-Scheduler/blob/master/public/README-IMGS/Create.gif)
 ## Dependencies
 
 - axios:0.27.2
