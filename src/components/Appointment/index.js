@@ -18,19 +18,19 @@ const ERROR_SAVE = "ERROR_SAVE";
 const ERROR_DELETE = "ERROR_DELETE";
 
 export default function Appointment(props) {
-  const { mode, transition, back } = useVisualMode(
-    props.interview ? SHOW : EMPTY
+  const { mode, transition, back } = useVisualMode( // useVisualMode is a custom hook 
+    props.interview ? SHOW : EMPTY // if there is an interview, show the show component, otherwise show the empty component
   );
 
-  function save(name, interviewer) {
-    const interview = {
+  const Save = (name, interviewer) => {
+    const interview = { // create an interview object
       student: name,
       interviewer,
     };
     // call saving indicator
     transition(SAVING);
     props
-      .bookInterview(props.id, interview)
+      .bookInterview(props.id, interview) 
 
       .then(() => {
         transition(SHOW);
@@ -38,7 +38,7 @@ export default function Appointment(props) {
       .catch(() => {
         transition(ERROR_SAVE, true);
       });
-  }
+  };
 
   const confirmDelete = () => {
     transition(CONFIRM);
@@ -56,11 +56,11 @@ export default function Appointment(props) {
       });
   };
 
-
   return (
     <article className="appointment" data-testid="appointment">
       <Header time={props.time} />
       {mode === EMPTY && <Empty onAdd={() => transition("CREATE")} />}
+      {/* Render the show component */}
       {mode === SHOW && (
         <Show
           student={props.interview.student}
@@ -69,12 +69,14 @@ export default function Appointment(props) {
           onConfirm={confirmDelete}
         />
       )}
+      {/* Render the create form */}
       {mode === "CREATE" && (
-        <Form interviewers={props.interviewers} onCancel={back} onSave={save} />
+        <Form interviewers={props.interviewers} onCancel={back} onSave={Save} />
       )}
-
+      {/* Render the saving indicator */}
       {mode === SAVING && <Status message="Saving" />}
       {mode === DELETING && <Status message="Deleting" />}
+      {/* Render the confirm view */}
       {mode === CONFIRM && (
         <Confirm
           message="Are you sure you would like to delete?"
@@ -82,6 +84,7 @@ export default function Appointment(props) {
           onConfirm={deleteInterview}
         />
       )}
+      {/* Render the edit form */}
       {mode === EDIT && (
         <Form
           name={props.interview.student}
@@ -91,6 +94,7 @@ export default function Appointment(props) {
           onSave={save}
         />
       )}
+      {/* Render the error message */}
       {mode === ERROR_SAVE && (
         <Error message="Could not save appointment" onClose={back} />
       )}
