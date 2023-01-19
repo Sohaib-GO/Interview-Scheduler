@@ -1,23 +1,63 @@
-# Interview Scheduler
+# Scheduler Project
 
-## Setup
+Scheduler is a SPA ( single-page-application) project, where students can create, edit, and delete interview appointments in real time.
+
+> **_React Library_** is used to build the front end, **_axios_** is used to fetch external **_API_**, **_StoryBook_** is used to design components in isolation, **_Jet Test Framework_** is used for unit and integration testing, and **_Cypress_** is used for end-to-end testing.
+
+This is my fifth project at LHL after [Lotide](https://github.com/sohaib-go/lotide), [TinyApp](https://github.com/sohaib-go/tinyApp), [Tweeter](https://github.com/sohaib-go/tweeter), and midterm project [Food Ordering Pick up app](https://github.com/Sohaib-GO/Food-Ordering-Pick-Up-App)
+
+## Final Product
+
+
+#### _Create a New Interview_
+
+!["Create a New Interview"]()
+
+## Dependencies
+
+- axios:0.27.2
+- classnames: ^2.2.6
+- normalize.css: ^8.0.1
+- react: ^16.14.0
+- react-dom: ^16.9.0
+- react-scripts: 3.4.4
+
+## Dev-Dependencies
+
+- @babel/core: ^7.4.3
+- @storybook/addon-actions: ^5.0.10
+- @storybook/addon-backgrounds: ^5.0.10
+- @storybook/addon-links: ^5.0.10
+- @storybook/addons: ^5.0.10
+- @storybook/react: ^5.0.10
+- @testing-library/jest-dom: ^4.0.0
+- @testing-library/react: ^8.0.7
+- @testing-library/react-hooks: ^8.0.1
+- babel-loader: ^8.0.5
+- prop-types: ^15.8.1
+- react-test-renderer: ^16.14.0
+- sass: ^1.53.0
+
+## Getting Started
 
 Install dependencies with `npm install`.
 
-## Running Webpack Development Server
+### Running Webpack Development Server
 
 ```sh
 npm start
 ```
 
-## Running Jest Test Framework
+### Running Jest Test Framework
 
 ```sh
 npm test
 ```
 
-## Running Storybook Visual Testbed
+### Running Storybook Visual Testbed
 
 ```sh
 npm run storybook
 ```
+
+> **Hope you enjoy the app and have a nice day :D**
