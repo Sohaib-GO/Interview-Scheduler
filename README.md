@@ -60,4 +60,10 @@ npm test
 npm run storybook
 ```
 
+### Running Cypress End-to-End Test
+
+```sh
+npm run cypress
+```
+
 > **Hope you enjoy the app and have a nice day :D**
