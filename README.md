@@ -21,7 +21,14 @@ This is my fifth project at LHL after [Lotide](https://github.com/sohaib-go/loti
 #### _Create a New Interview_
 
 !["Create a New Interview"](https://github.com/Sohaib-GO/Interview-Scheduler/blob/master/public/README-IMGS/Create.gif)
+
+#### _Edit & Delete an Interview_
+
+!["Edit & Delete an Interview"](https://github.com/Sohaib-GO/Interview-Scheduler/blob/master/public/README-IMGS/Edit-Delete.gif)
+
+
 ## Dependencies
+
 
 - axios:0.27.2
 - classnames: ^2.2.6
